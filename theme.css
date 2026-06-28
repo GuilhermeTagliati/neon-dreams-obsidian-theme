@@ -749,21 +749,19 @@ a,
 .internal-link,
 .external-link {
     color: var(--nd-primary);
-    text-decoration: underline hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.35);
-    transition: color 0.15s ease, text-decoration 0.15s ease;
+    text-decoration: underline;
+    transition: color 0.15s ease;
 }
 
 a:hover,
 .internal-link:hover,
 .external-link:hover {
     color: var(--nd-primary-hov);
-    text-decoration: underline var(--nd-primary-hov);
 }
 
 .is-unresolved {
     color: var(--nd-warn);
     opacity: 0.85;
-    text-decoration: underline rgba(245, 158, 11, 0.40);
 }
 
 /* ── Bold / italic ──────────────────────────── */
@@ -1028,7 +1026,7 @@ li.task-list-item[data-task="?"] .task-list-item-title {
 
 li.task-list-item[data-task="x"] .task-list-item-title {
     color: var(--nd-text-dis);
-    text-decoration: line-through var(--nd-border-strong);
+    text-decoration: line-through;
 }
 
 li.task-list-item[data-task="-"] .task-list-item-title {

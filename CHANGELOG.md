@@ -2,6 +2,13 @@
 
 All notable changes to Neon Dreams are documented here.
 
+## 1.0.2 (2026-06-27)
+
+### Fixes
+
+- Drop multi-value `text-decoration` shorthand (e.g. `line-through <color>`) in favor of the single-keyword form for full compatibility
+- Bump `minAppVersion` from `1.1.0` to `1.6.0`
+
 ## 1.0.1 (2026-06-27)
 
 ### Fixes
