@@ -2,6 +2,14 @@
 
 All notable changes to Neon Dreams are documented here.
 
+## 1.0.1 (2026-06-27)
+
+### Fixes
+
+- Remove non-standard `scrollbar-color` / `scrollbar-width` (webkit pseudo-elements already cover Electron)
+- Replace `text-decoration-line` / `text-decoration-color` longhands with the `text-decoration` shorthand for broader compatibility
+- Remove all `!important` overrides in favor of higher selector specificity (`body` prefix) and Obsidian CSS variables (`--checkbox-color`, `--checkbox-marker-color`)
+
 ## 1.0.0 (2026-06-27)
 
 Initial release. A dark Obsidian theme with a precise, structured aesthetic.
