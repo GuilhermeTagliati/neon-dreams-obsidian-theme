@@ -1,0 +1,40 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nd-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0c16"/>
+      <stop offset="1" stop-color="#05060d"/>
+    </linearGradient>
+    <linearGradient id="nd-moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b97ff"/>
+      <stop offset="1" stop-color="#5562ff"/>
+    </linearGradient>
+    <filter id="nd-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="nd-card"><rect x="8" y="8" width="240" height="240" rx="48"/></clipPath>
+    <mask id="nd-crescent">
+      <rect width="256" height="256" fill="black"/>
+      <circle cx="118" cy="130" r="58" fill="white"/>
+      <circle cx="150" cy="112" r="50" fill="black"/>
+    </mask>
+  </defs>
+
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="url(#nd-bg)" stroke="#1b2036" stroke-width="2"/>
+
+  <g clip-path="url(#nd-card)" stroke="#6675ff" stroke-opacity="0.10" stroke-width="1">
+    <path d="M8 72H248M8 128H248M8 184H248"/>
+    <path d="M72 8V248M128 8V248M184 8V248"/>
+  </g>
+
+  <g filter="url(#nd-glow)">
+    <rect width="256" height="256" fill="url(#nd-moon)" mask="url(#nd-crescent)"/>
+  </g>
+
+  <circle cx="178" cy="80" r="3.5" fill="#22c55e"/>
+  <circle cx="198" cy="150" r="2.5" fill="#00c2ff"/>
+  <circle cx="86" cy="190" r="2.5" fill="#8b97ff"/>
+</svg>
