@@ -1065,7 +1065,7 @@ li.task-list-item[data-task="-"] .task-list-item-title {
 .callout[data-callout="note"],
 .callout[data-callout="info"] {
     border-left-color: var(--nd-cyan);
-    --callout-color: 0, 194, 255;
+    --callout-color: rgb(0, 194, 255);
 }
 
 .callout[data-callout="tip"],
@@ -1073,14 +1073,14 @@ li.task-list-item[data-task="-"] .task-list-item-title {
 .callout[data-callout="check"],
 .callout[data-callout="done"] {
     border-left-color: var(--nd-neon);
-    --callout-color: 34, 197, 94;
+    --callout-color: rgb(34, 197, 94);
 }
 
 .callout[data-callout="warning"],
 .callout[data-callout="caution"],
 .callout[data-callout="attention"] {
     border-left-color: var(--nd-warn);
-    --callout-color: 245, 158, 11;
+    --callout-color: rgb(245, 158, 11);
 }
 
 .callout[data-callout="error"],
@@ -1090,13 +1090,13 @@ li.task-list-item[data-task="-"] .task-list-item-title {
 .callout[data-callout="missing"],
 .callout[data-callout="bug"] {
     border-left-color: var(--nd-error);
-    --callout-color: 255, 92, 122;
+    --callout-color: rgb(255, 92, 122);
 }
 
 .callout[data-callout="quote"],
 .callout[data-callout="cite"] {
     border-left-color: var(--nd-text-3);
-    --callout-color: 133, 139, 157;
+    --callout-color: rgb(133, 139, 157);
 }
 
 .callout-title {
