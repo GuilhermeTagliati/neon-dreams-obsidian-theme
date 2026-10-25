@@ -2,6 +2,39 @@
 
 All notable changes to Neon Dreams are documented here.
 
+## 1.1.0 (2026-10-25)
+
+### Changed
+
+- Refine Neon Dreams using the supplied Refactoring UI book, color palettes, component gallery and font recommendations while retaining indigo accents and semantic task states
+- Use less-saturated charcoal surfaces with clearer separation between the editor, sidebars and elevated overlays
+- Replace colored section headings with a neutral 30/24/20/18/16/14-equivalent type scale, proportional heading line heights and larger section spacing
+- Set default readable line width to `38rem` and body line height to 1.65
+- Increase supporting-text contrast, including table headers, metadata labels, placeholders and code comments
+- Separate primary-button fills from brighter link colors for legible white button text
+- Use sans-serif metadata and tables with tabular figures; reserve monospace for code and tags
+- Replace full table grids with horizontal separators and remove decorative accent borders from code blocks and blockquotes
+- Add elevation shadows to menus, suggestions and dialogs; make the workspace grid opt-in
+- Complete light-mode native-variable mappings and darken its semantic colors and callout titles
+- Restrict general input styling to text-like controls so it does not restyle toggles, checkboxes, ranges or color pickers
+
+### Added
+
+- Style Settings controls for readable line width and workspace grid
+- Visible keyboard focus and system reduced-motion support
+- Compact callout/code padding on narrow screens and keyboard-accessible reveal for auto-hidden ribbon/status bar
+
+### Fixed
+
+- Match body-level active-line, square-checkbox and plain-tag feature flags correctly
+- Reserve the explorer selection border on inactive files to avoid shifting labels
+- Keep wide tables inside their scroll wrapper on mobile; desktop widening is limited to Reading view
+- Restore a visible outline for the outlined-callout option after simplifying default callout borders
+
+### Notes
+
+- Existing screenshots predate this release. Contrast verification covers the default palette, not arbitrary user-selected colors.
+
 ## 1.0.2 (2026-06-27)
 
 ### Fixes
