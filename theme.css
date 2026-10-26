@@ -696,10 +696,6 @@ body {
     padding-block: var(--nd-space-1);
 }
 
-.view-header-title-container:has(.view-header-title[contenteditable="true"]) .view-header-title-parent {
-    display: none;
-}
-
 .view-header-title[contenteditable="true"] {
     flex: 1 1 auto;
     min-width: 0;

@@ -2,6 +2,12 @@
 
 All notable changes to Neon Dreams are documented here.
 
+## 1.2.1 (2026-10-25)
+
+### Fixed
+
+- Remove the relational selector used to hide breadcrumbs during header rename; retain native breadcrumb layout, horizontally scrolling long names and an inset focus indicator without clipping
+
 ## 1.2.0 (2026-10-25)
 
 ### Added
