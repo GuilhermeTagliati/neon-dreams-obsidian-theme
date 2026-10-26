@@ -2,6 +2,40 @@
 
 All notable changes to Neon Dreams are documented here.
 
+## 1.2.0 (2026-10-25)
+
+### Added
+
+- Progressive glass surfaces for floating menus, suggestions, popovers, Graph controls and restrained modal panels, with separate dark/light opacities and solid fallback
+- Subtle neon glow for active file selection and primary-button hover/keyboard focus; optional solid-surface and no-glow Style Settings toggles
+- System reduced-transparency support; editor, properties and Bases remain opaque
+
+### Changed
+
+- Introduce the night-terminal direction: almost-black navigation, a brighter graphite reading plane, cyan section headings and luminous cyan active navigation, with deep-cyan equivalents on white in light mode
+- Preserve custom Obsidian accent choices for links/actions while using a separate cyan signature for navigation and section hierarchy
+- Make neon visible in the everyday workspace through a stronger tinted file selection and illuminated active tab icons, without accent borders or prose glow; keep light-mode intensity lower
+- Refine Bases tables with quiet headers, horizontal separators, neutral file links, semantic hover and cell selection, and right-aligned numeric editors without changing native row/column geometry
+- Replace the Graph control panel's persistent accent frame with a neutral elevated surface, compact section rows and contained disclosure icons; preserve graph groups and physics
+- Set cyan as the default accent with contrast-calibrated shades in both modes; preserve user-customized link/action accents independently of the cyan signature
+- Separate the larger, bold monospace note title from smaller section headings and improve long-title wrapping
+- Add dedicated dark/light syntax palettes: violet keywords, green strings, amber numbers, cyan functions and blue types, independent of the UI accent
+- Remove default callout accent borders, retaining semantic icons/titles on quiet surfaces; preserve the optional outlined style
+- Use compact squared-off tags, monospace callout/property section labels and tabular monospace dates/numbers
+- Refine controls toward a quieter macOS-like appearance: neutral selection backgrounds, no accent strokes on tabs or active files, restrained primary fills and subtle neutral button shadows
+- Use the system interface font on macOS, compact 6px control corners and a single keyboard-only focus ring instead of stacked focus shadows
+
+### Fixed
+
+- Keep active-file and folder font weights consistent across idle and hover states by setting Obsidian's native navigation weight tokens
+- Bound custom accent lightness per mode and map native links/tags to the calibrated color so a bright custom gold does not become unreadable on light backgrounds
+- Exclude Bases inline editors from general form-input styles so date cells stay borderless and aligned with their rows; retain cell-level focus and tabular monospace dates/numbers
+- Use a theme-owned callout color token to support both legacy RGB-triplet and newer full-color Obsidian callout variables, including abstract, todo, question and example
+- Keep header rename fields and their focus indicators inside the available header width; temporarily hide breadcrumbs during renaming so long titles can scroll without clipping the focus border
+- Restore the native tree-icon gutter in navigation padding and center explorer icons within each row, keeping folder arrows inside hover/selection backgrounds at every nesting level
+- Exclude inline property editors from general text-input styles to remove boxed frontmatter labels and dates
+- Use consistent property-label widths, quieter icons and row spacing; show a single focus indicator around the edited property rather than nested input outlines
+
 ## 1.1.0 (2026-10-25)
 
 ### Changed
